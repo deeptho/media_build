@@ -1,7 +1,8 @@
 #!/bin/bash
-
+make dir DIR=../media
+make distclean
 # Enable some staging drivers
-make stagingconfig
+make stagingconfig || exit
 
 # Disable RC/IR support
 sed -i -r 's/(^CONFIG.*_RC.*=)./\1n/g' v4l/.config
