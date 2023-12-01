@@ -28,21 +28,29 @@ add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
 
-[6.3.8]
+[6.5.1023]
+add v6.5_pcm_copy.patch
+add v6.5_dvb_math.patch
 
+[6.4.1023]
+add v6.4_pin_user_pages.patch
+
+[6.3.1023]
+add v6.3_class_create.patch
+add v6.3_check_endpoint.patch
 
 [6.2.1023]
-add v6.2_v4l2-core.patch
-
-[6.2.14]
 add v6.2_class.patch
 add v6.2_remove.patch
+add v6.2_probe.patch
+add v6.2_v4l2-core.patch
 
 [6.1.1023]
 add v6.1_class.patch
 add v6.1_i2c_probe.patch
 add v6.1_videobuf2.patch
 add v6.1_timer.patch
+add v6.1_ipu3.patch
 
 [6.0.1023]
 add v6.0_i2c_remove.patch
