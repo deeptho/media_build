@@ -10,7 +10,7 @@ index 439c15bc9e44..34fad7123704 100644
 +	.probe_new	= ch7322_probe,
  	.remove		= ch7322_remove,
  };
- 
+
 diff --git a/drivers/media/dvb-frontends/a8293.c b/drivers/media/dvb-frontends/a8293.c
 index f39887c04978..cca7cbdd4c7c 100644
 --- a/drivers/media/dvb-frontends/a8293.c
@@ -452,7 +452,7 @@ index 3eb6d5e8f082..4498d78a2357 100644
 +	.probe_new = adv748x_probe,
  	.remove = adv748x_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/adv7511-v4l2.c b/drivers/media/i2c/adv7511-v4l2.c
 index a9183d9282fd..3999fa524cab 100644
 --- a/drivers/media/i2c/adv7511-v4l2.c
@@ -530,7 +530,7 @@ index a4e39871e8f7..77f597571167 100644
 +	.probe_new = ar0521_probe,
  	.remove = ar0521_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/bt819.c b/drivers/media/i2c/bt819.c
 index b4a25cc996dc..39f8a5361166 100644
 --- a/drivers/media/i2c/bt819.c
@@ -582,7 +582,7 @@ index 49e0d9a09530..559a415fd827 100644
 +	.probe_new = ccs_probe,
  	.remove	= ccs_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/cs3308.c b/drivers/media/i2c/cs3308.c
 index 61afa3d799d2..a0b66c04fe25 100644
 --- a/drivers/media/i2c/cs3308.c
@@ -673,7 +673,7 @@ index 4148009e0e01..3599720db7e9 100644
 +	.probe_new = dw9807_probe,
  	.remove = dw9807_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/et8ek8/et8ek8_driver.c b/drivers/media/i2c/et8ek8/et8ek8_driver.c
 index d6fc843f9368..ff9bb9fc97dd 100644
 --- a/drivers/media/i2c/et8ek8/et8ek8_driver.c
@@ -712,7 +712,7 @@ index fa0038749a3b..f8709cdf28b3 100644
 +	.probe_new = hi846_probe,
  	.remove = hi846_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/hi847.c b/drivers/media/i2c/hi847.c
 index 7cdce392e137..5a82b15a9513 100644
 --- a/drivers/media/i2c/hi847.c
@@ -725,7 +725,7 @@ index 7cdce392e137..5a82b15a9513 100644
 +	.probe_new = hi847_probe,
  	.remove = hi847_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/imx208.c b/drivers/media/i2c/imx208.c
 index 3e870fa9ff79..64c70ebf9869 100644
 --- a/drivers/media/i2c/imx208.c
@@ -751,7 +751,7 @@ index 2f9c8582f940..b588b500c69d 100644
 +	.probe_new = imx214_probe,
  	.remove = imx214_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/imx219.c b/drivers/media/i2c/imx219.c
 index d737d5e9a4a6..f9471c9e3a74 100644
 --- a/drivers/media/i2c/imx219.c
@@ -764,7 +764,7 @@ index d737d5e9a4a6..f9471c9e3a74 100644
 +	.probe_new = imx219_probe,
  	.remove = imx219_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/imx258.c b/drivers/media/i2c/imx258.c
 index e196565e846e..85d73b186111 100644
 --- a/drivers/media/i2c/imx258.c
@@ -777,7 +777,7 @@ index e196565e846e..85d73b186111 100644
 +	.probe_new = imx258_probe,
  	.remove = imx258_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/imx274.c b/drivers/media/i2c/imx274.c
 index f33b692e6951..9219f3c9594b 100644
 --- a/drivers/media/i2c/imx274.c
@@ -797,7 +797,7 @@ index b3f832e9d7e1..1281f4f16357 100644
 +++ b/drivers/media/i2c/imx290.c
 @@ -1716,7 +1716,7 @@ static const struct of_device_id imx290_of_match[] = {
  MODULE_DEVICE_TABLE(of, imx290_of_match);
- 
+
  static struct i2c_driver imx290_i2c_driver = {
 -	.probe = imx290_probe,
 +	.probe_new = imx290_probe,
@@ -816,7 +816,7 @@ index c0b9a5349668..c3d6d52fc772 100644
 +	.probe_new = imx296_probe,
  	.remove = imx296_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/imx319.c b/drivers/media/i2c/imx319.c
 index a2140848d0d6..45b1b61b2880 100644
 --- a/drivers/media/i2c/imx319.c
@@ -836,7 +836,7 @@ index d722c9b7cd31..2674bfbf43d1 100644
 +++ b/drivers/media/i2c/imx334.c
 @@ -1416,7 +1416,7 @@ static const struct of_device_id imx334_of_match[] = {
  MODULE_DEVICE_TABLE(of, imx334_of_match);
- 
+
  static struct i2c_driver imx334_driver = {
 -	.probe = imx334_probe,
 +	.probe_new = imx334_probe,
@@ -849,7 +849,7 @@ index 482a0b7f040a..078ede2b7a00 100644
 +++ b/drivers/media/i2c/imx335.c
 @@ -1112,7 +1112,7 @@ static const struct of_device_id imx335_of_match[] = {
  MODULE_DEVICE_TABLE(of, imx335_of_match);
- 
+
  static struct i2c_driver imx335_driver = {
 -	.probe = imx335_probe,
 +	.probe_new = imx335_probe,
@@ -875,7 +875,7 @@ index c7e862ae4040..e1e986dc8856 100644
 +++ b/drivers/media/i2c/imx412.c
 @@ -1293,7 +1293,7 @@ static const struct of_device_id imx412_of_match[] = {
  MODULE_DEVICE_TABLE(of, imx412_of_match);
- 
+
  static struct i2c_driver imx412_driver = {
 -	.probe = imx412_probe,
 +	.probe_new = imx412_probe,
@@ -888,7 +888,7 @@ index 4b5d1ee9cc6b..d90392df98c7 100644
 +++ b/drivers/media/i2c/imx415.c
 @@ -1283,7 +1283,7 @@ static const struct of_device_id imx415_of_match[] = {
  MODULE_DEVICE_TABLE(of, imx415_of_match);
- 
+
  static struct i2c_driver imx415_driver = {
 -	.probe = imx415_probe,
 +	.probe_new = imx415_probe,
@@ -998,7 +998,7 @@ index 88c58e0c49aa..13a986b88588 100644
 +	.probe_new	= max9286_probe,
  	.remove		= max9286_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ml86v7667.c b/drivers/media/i2c/ml86v7667.c
 index 5b72d4434224..dbd2f0bd3651 100644
 --- a/drivers/media/i2c/ml86v7667.c
@@ -1115,7 +1115,7 @@ index 1f7edc0f5b1a..46d91cd0870c 100644
 +	.probe_new	= mt9v111_probe,
  	.remove		= mt9v111_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/og01a1b.c b/drivers/media/i2c/og01a1b.c
 index b5948759342e..35663c10fcd9 100644
 --- a/drivers/media/i2c/og01a1b.c
@@ -1128,7 +1128,7 @@ index b5948759342e..35663c10fcd9 100644
 +	.probe_new = og01a1b_probe,
  	.remove = og01a1b_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov01a10.c b/drivers/media/i2c/ov01a10.c
 index bbd5740d2280..06a1022faea7 100644
 --- a/drivers/media/i2c/ov01a10.c
@@ -1141,7 +1141,7 @@ index bbd5740d2280..06a1022faea7 100644
 +	.probe_new = ov01a10_probe,
  	.remove = ov01a10_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov02a10.c b/drivers/media/i2c/ov02a10.c
 index 741d977a76f3..9fbef9c5a52f 100644
 --- a/drivers/media/i2c/ov02a10.c
@@ -1167,7 +1167,7 @@ index 7d55d4ca24de..a39e086a51c5 100644
 +	.probe_new = ov08d10_probe,
  	.remove = ov08d10_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov08x40.c b/drivers/media/i2c/ov08x40.c
 index 77bcdcd0824c..72ae7fba94eb 100644
 --- a/drivers/media/i2c/ov08x40.c
@@ -1180,7 +1180,7 @@ index 77bcdcd0824c..72ae7fba94eb 100644
 +	.probe_new = ov08x40_probe,
  	.remove = ov08x40_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov13858.c b/drivers/media/i2c/ov13858.c
 index 3db3e64fa3ff..69a7a2c590db 100644
 --- a/drivers/media/i2c/ov13858.c
@@ -1258,7 +1258,7 @@ index 303793e1f97d..113c294fb0ff 100644
 +	.probe_new	= ov2685_probe,
  	.remove		= ov2685_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov2740.c b/drivers/media/i2c/ov2740.c
 index 158d934733c3..89d126240c34 100644
 --- a/drivers/media/i2c/ov2740.c
@@ -1284,7 +1284,7 @@ index fda217d2cb10..c602e507d42b 100644
 +	.probe_new = ov4689_probe,
  	.remove	= ov4689_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov5640.c b/drivers/media/i2c/ov5640.c
 index 36b509714c8c..ee974edecb57 100644
 --- a/drivers/media/i2c/ov5640.c
@@ -1297,7 +1297,7 @@ index 36b509714c8c..ee974edecb57 100644
 +	.probe_new = ov5640_probe,
  	.remove   = ov5640_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov5645.c b/drivers/media/i2c/ov5645.c
 index a70db7e601a4..c8999fc4f26f 100644
 --- a/drivers/media/i2c/ov5645.c
@@ -1336,7 +1336,7 @@ index aa10eb4e3991..699cfb7f84e9 100644
 +	.probe_new = ov5648_probe,
  	.remove = ov5648_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov5670.c b/drivers/media/i2c/ov5670.c
 index d722348b938b..c026610d0f31 100644
 --- a/drivers/media/i2c/ov5670.c
@@ -1388,7 +1388,7 @@ index 3023b7254167..9c4b231b453b 100644
 +	.probe_new	= ov5695_probe,
  	.remove		= ov5695_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov6650.c b/drivers/media/i2c/ov6650.c
 index 1ad07935f046..4c0ea2ae671b 100644
 --- a/drivers/media/i2c/ov6650.c
@@ -1414,7 +1414,7 @@ index 675fb37a6fea..062606dcc8ae 100644
 +	.probe_new = ov7251_probe,
  	.remove = ov7251_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov7640.c b/drivers/media/i2c/ov7640.c
 index 293f5f404358..e6751d5cc64b 100644
 --- a/drivers/media/i2c/ov7640.c
@@ -1492,7 +1492,7 @@ index 3af6125a2eee..2fc69e0f2326 100644
 +	.probe_new	= ov8858_probe,
  	.remove		= ov8858_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov8865.c b/drivers/media/i2c/ov8865.c
 index f2213c6158d3..c289d8f9277c 100644
 --- a/drivers/media/i2c/ov8865.c
@@ -1505,14 +1505,14 @@ index f2213c6158d3..c289d8f9277c 100644
 +	.probe_new = ov8865_probe,
  	.remove = ov8865_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/ov9282.c b/drivers/media/i2c/ov9282.c
 index 068c7449f50e..7f46cac38aab 100644
 --- a/drivers/media/i2c/ov9282.c
 +++ b/drivers/media/i2c/ov9282.c
 @@ -1512,7 +1512,7 @@ static const struct of_device_id ov9282_of_match[] = {
  MODULE_DEVICE_TABLE(of, ov9282_of_match);
- 
+
  static struct i2c_driver ov9282_driver = {
 -	.probe = ov9282_probe,
 +	.probe_new = ov9282_probe,
@@ -1544,7 +1544,7 @@ index b6244772bc59..8b0a158cb297 100644
 +	.probe_new = ov9734_probe,
  	.remove = ov9734_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/rdacm20.c b/drivers/media/i2c/rdacm20.c
 index 01a2596282f0..a2263fa825b5 100644
 --- a/drivers/media/i2c/rdacm20.c
@@ -1570,7 +1570,7 @@ index 043fec778a5e..9ccc56c30d3b 100644
 +	.probe_new	= rdacm21_probe,
  	.remove		= rdacm21_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/rj54n1cb0c.c b/drivers/media/i2c/rj54n1cb0c.c
 index b430046f9e2a..9db5473daba0 100644
 --- a/drivers/media/i2c/rj54n1cb0c.c
@@ -1739,7 +1739,7 @@ index 906553a28676..49a7d7bdd703 100644
 +	.probe_new = mipid02_probe,
  	.remove = mipid02_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/st-vgxy61.c b/drivers/media/i2c/st-vgxy61.c
 index 30f82ca344c4..adbd093ad190 100644
 --- a/drivers/media/i2c/st-vgxy61.c
@@ -1752,7 +1752,7 @@ index 30f82ca344c4..adbd093ad190 100644
 +	.probe_new = vgxy61_probe,
  	.remove = vgxy61_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/tc358743.c b/drivers/media/i2c/tc358743.c
 index 15f8163be9bf..9197fa0b1bc2 100644
 --- a/drivers/media/i2c/tc358743.c
@@ -1778,7 +1778,7 @@ index e9b2d906c177..ec1a193ba161 100644
 +	.probe_new = tc358746_probe,
  	.remove = tc358746_remove,
  };
- 
+
 diff --git a/drivers/media/i2c/tda1997x.c b/drivers/media/i2c/tda1997x.c
 index 325e99125941..27f6393dc327 100644
 --- a/drivers/media/i2c/tda1997x.c
@@ -2351,3 +2351,16 @@ index 5687089bea6e..1c0d23c52203 100644
  	.remove		= tuner_remove,
  	.command	= tuner_command,
  	.id_table	= tuner_id,
+diff --git a/drivers/media/dvb-frontends/si2183_drv.c b/drivers/media/dvb-frontends/si2183_drv.c
+index 6e21a44c825b..97098c9f42ea 100644
+--- a/drivers/media/dvb-frontends/si2183_drv.c
++++ b/drivers/media/dvb-frontends/si2183_drv.c
+@@ -1695,7 +1695,7 @@ static struct si_base *match_base(struct i2c_adapter *i2c, u8 adr)
+ 	return NULL;
+ }
+
+-static int si2183_probe(struct i2c_client *client)
++static int si2183_probe(struct i2c_client *client, const struct i2c_device_id *unused)
+ {
+ 	struct si2183_config *config = client->dev.platform_data;
+ 	struct si2183_dev* state;
